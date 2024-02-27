@@ -1,0 +1,531 @@
+    <html lang="en">
+    <head>
+        <title> Students </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale-1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+      @font-face {
+      font-family: Montserrat;
+      src: url(https://fonts.google.com/share?query=montserrat);
+      }
+
+      @font-face {
+      font-family: Comfortaa;
+      src: url(https://fonts.google.com/share?query=comfortaa);
+      }
+
+    nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0px;
+                width: 100vw;
+                left: 0;
+                position: fixed;
+                background-color: rgb(0, 60, 255);
+                color: white;
+                font-family: Montserrat;
+                font-weight: bold;
+                height: 10.5vh;
+                margin: 0px;
+                z-index: 30;
+                top: 0;
+            }
+
+        .mainLis {
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px 10px;
+            color: black;
+            }
+
+        li{
+            list-style-type: none;
+        }
+
+
+            #sub1 {
+                opacity: 0;
+                position: absolute;
+                top: 15px;
+                visibility: hidden;
+                z-index: 3;
+                text-align: center;
+            }
+
+                #subLi {
+                    float: none;
+                    text-align: center;
+                    position: relative;
+                    opacity: 1;
+                    padding: 0;
+                }
+
+            .ContainerLi:hover #sub1 {
+                opacity: 1;
+                display: block;
+                padding: 0;
+                visibility: visible;
+                transition: 0.4s top, 0.6s opacity;
+                top: 40px;
+                position: absolute;
+            }
+
+
+        
+            a {
+                text-decoration: none;
+                color: rgb(55, 70, 206);
+                text-align: left;
+                display: inline-block;
+                transition: 1s;
+            }
+
+
+            li a {
+                z-index: 3;
+                display: block;
+                color: rgb(252, 252, 252);
+                text-align: left; /*padding: 14px 16px;*/
+                padding: 5px;
+                background-color: rgb(21, 169, 228);
+                overflow: hidden;
+                }
+
+            a:hover {
+                background-color: rgb(209, 219, 209);
+                font-size: 30px;
+            }
+
+            .Diamond {
+                background-image: url("Diamond.jpg");
+                text-align: center;
+                font-size: 25px;
+                height: 35vh;
+            }
+
+            p {
+                color: white;
+                font-size: 15px;
+            }
+
+    
+            h2 {
+                color: aliceblue;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                letter-spacing: 1px;
+            }
+
+            .title {
+                width: 340px;
+                height: 50px;
+                background-color: blue;
+                margin: auto;
+            }  
+                    
+            body {
+            overflow-x: hidden;
+            }
+
+        h1 {
+        font-family: Montserrat;
+        font-weight:700;
+        color: aliceblue;
+        }
+
+        h2 {
+        color: aliceblue;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+        letter-spacing: 1px;
+        }
+
+        .row {
+        display: flex;
+        }
+        
+        .column {
+        flex: 33.33%;
+        }
+
+        .hbd {
+        background-color: rgb(43, 132, 205);
+        color: aliceblue;
+        margin: auto;
+        width: 350px;
+        }
+
+        .logo {
+        width: 45px;  
+        }
+
+        .card {
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        background-image: url(card.png);
+        padding: 15px;
+        line-height: 1px;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%); 
+        }
+
+        .card:hover {
+        transform:scale(1.2);
+        filter:grayscale(0%);
+        -webkit-filter: grayscale(0);
+        transition: .7s;
+        }
+
+        .pfp {
+        border-radius: 50%;
+        width: 140px;
+        margin-top: 35px;
+        }
+
+        .name {
+        font-family: Montserrat;
+        font-size: 25px;
+        font-weight: bold;
+        color:black;
+        }
+
+        .names {
+        font-family: Montserrat;
+        font-size: 22px;
+        font-weight: bold;
+        color:black;  
+        }
+
+        .pos {
+        font-family: Montserrat;
+        font-size: 25px;
+        font-weight: bold;
+        color: grey
+        }
+
+        #namess {
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: bold;
+        color: black
+        }
+
+        footer {
+        z-index: auto;
+        text-align: center;
+        padding: 10px;
+        background-color: blue;
+        font-weight: 600;
+        font-size: 20px;
+        word-spacing: 100px;
+        }
+
+        .fa-facebook {
+         color: white;
+         font-size: 35px;
+        }
+
+        .fa-twitter {
+         color: skyblue;
+         font-size: 35px;
+        }
+        
+        </style>
+        </head>
+    <body>
+        <div class="Diamond">
+        <br>
+        <div class="title">
+    <h2> Diamond '23-'24</h2>
+        </div>
+        <div class="title">
+    <p>Honorato C. Perez Sr., Memorial Science High School (HCPSMSHS) Grade 8-Diamond s.y. 2023-2024</p>
+        </div>
+    <br>
+    <br>
+    <nav>
+        <ul class="mainUL">
+            <li class="mainLis"> <img src="Logo.png" class="logo"> </li>
+            <li class="mainLis"> <a href="About.html"> About </a></li>
+            <li class="ContainerLi mainLis">
+                <a href="ASMEPPS.html"> Achievements </a>
+                <ul id="sub1">
+                    <li class="subLi"><a href="ASMEPPS.html"> ASMEPPS  </a> </li>
+                    <li class="subLi"><a href="Envirex.html"> Envirex </a> </li>
+                    <li class="subLi"><a href="Intramurals.html"> Intramurals </a> </li>
+                    <li class="subLi"><a href="1st-Implementer.html"> 1st Implementer </a> </li>
+                </ul>
+                <li class="ContainerLi mainLis">
+                <a href="Birthdays.html"> Events </a>
+                <ul id="sub1">
+                    <li class="subLi"><a href="Birthdays.html"> Birthdays  </a> </li>
+                    <li class="subLi"><a href="Activities.html"> Activities </a> </li>
+                    <li class="subLi"><a href="Recognitions.html"> Recognitions </a> </li>
+                </ul>
+                <li class="ContainerLi mainLis">
+                    <a href="Students.html"> People </a>
+                    <ul id="sub1">
+                        <li class="subLi"><a href="Students.html"> Students  </a> </li>
+                        <li class="subLi"><a href="Teachers.html"> Teachers </a> </li>
+                    </ul>
+        </ul>
+    </nav>
+        <div class="hbd">
+        <h1>STUDENTS</h1>
+        </div>
+        <div class="row">
+            <div class="column"> 
+                <div class="card">
+                    <img src="mil.jpeg" class="pfp">
+                    <p class="name"> Milvincent Amugauan </p>
+                    <p class="pos"> STUDENT </p>
+                </div>
+            </div>
+            <div class="column"> 
+                <div class="card">
+                    <img src="tae.jpeg" class="pfp">
+                    <p class="names"> John Seong Tae Antopina </p>
+                    <p class="pos"> STUDENT </p>
+                </div>
+            </div>
+            <div class="column"> 
+                <div class="card">
+                    <img src="lex.jpeg" class="pfp">
+                    <p class="name"> Lex Andrew Basol </p>
+                    <p class="pos"> STUDENT </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column"> 
+                <div class="card">
+                    <img src="clyde.png" class="pfp">
+                    <p class="name"> Clyde De Leon </p>
+                    <p class="pos"> EX-STUDENT </p>
+                </div>
+            </div>
+            <div class="column"> 
+                <div class="card">
+                    <img src="josh.jpeg" class="pfp">
+                    <p class="names"> Enoch Josh Del Rosario </p>
+                    <p class="pos"> STUDENT </p>
+                </div>
+            </div>
+            <div class="column"> 
+                <div class="card">
+                    <img src="ben.jpeg" class="pfp">
+                    <p class="name"> Benedict Domingo </p>
+                    <p class="pos"> TREASURER </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column"> 
+                <div class="card">
+                    <img src="dom.jpeg" class="pfp">
+                    <p id="namess"> Jose Alexis Dominic Dysangco </p>
+                    <p class="pos"> PEACE OFFICER </p>
+                </div>
+            </div>
+            <div class="column"> 
+                <div class="card">
+                    <img src="yanjel.jpeg" class="pfp">
+                    <p class="name"> Yanjel Zakiel Escuadro </p>
+                    <p class="pos"> STUDENT </p>
+                </div>
+            </div>
+            <div class="column"> 
+                <div class="card">
+                    <img src="hanns.jpeg" class="pfp">
+                    <p class="name"> Hanns David Gonzales </p>
+                    <p class="pos"> STUDENT </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column"> 
+                <div class="card">
+                    <img src="wes.jpeg" class="pfp">
+                    <p class="name"> Elijah Wesley Lorenzo </p>
+                    <p class="pos"> STUDENT </p>
+                </div>
+            </div>
+            <div class="column"> 
+                <div class="card">
+                    <img src="gab.jpeg" class="pfp">
+                    <p class="names"> Gabriel Angelo Luciano </p>
+                    <p class="pos"> EX-STUDENT </p>
+                </div>
+            </div>
+            <div class="column"> 
+                <div class="card">
+                    <img src="renz.jpeg" class="pfp">
+                    <p class="name"> Renz Benedict Quiros </p>
+                    <p class="pos"> STUDENT </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column"> 
+                <div class="card">
+                    <img src="nathan.jpeg" class="pfp">
+                    <p id="namess"> Nathaniel James Parungao </p>
+                    <p class="pos"> AUDITOR </p>
+                </div>
+            </div>
+            <div class="column"> 
+                <div class="card">
+                    <img src="jj.jpeg" class="pfp">
+                    <p class="names"> John Joseph Quibrantos </p>
+                    <p class="pos"> STUDENT </p>
+                </div>
+            </div>
+            <div class="column"> 
+                <div class="card">
+                    <img src="rus.jpeg" class="pfp">
+                    <p class="name"> Russel Syrius Ramos </p>
+                    <p class="pos"> STUDENT </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column"> 
+                <div class="card">
+                    <img src="sean.jpeg" class="pfp">
+                    <p class="name"> Sean Maurice Sanopo </p>
+                    <p class="pos"> STUDENT </p>
+                </div>
+            </div>
+            <div class="column"> 
+                <div class="card">
+                    <img src="steven.jpeg" class="pfp">
+                    <p class="name"> Steven James Santos </p>
+                    <p class="pos"> STUDENT </p>
+                </div>
+            </div>
+            <div class="column"> 
+                <div class="card">
+                    <img src="aris.jpeg" class="pfp">
+                    <p class="name"> Arison Lanz Tolentino </p>
+                    <p class="pos"> STUDENT </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column"> 
+                <div class="card">
+                    <img src="kyle.jpeg" class="pfp">
+                    <p class="name"> Kyle Angelo Zamora </p>
+                    <p class="pos"> VICE PRESIDENT </p>
+                </div>
+            </div>
+            <div class="column"> 
+                <div class="card">
+                    <img src="jas.jpeg" class="pfp">
+                    <p class="name"> Jasmine Elaine Abiog </p>
+                    <p class="pos"> STUDENT </p>
+                </div>
+            </div>
+            <div class="column"> 
+                <div class="card">
+                    <img src="alexa.jpeg" class="pfp">
+                    <p class="name"> Alexa Denise Cabanig </p>
+                    <p class="pos"> STUDENT </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column"> 
+                <div class="card">
+                    <img src="kz.jpeg" class="pfp">
+                    <p class="name"> Keziah Zabel Dasion </p>
+                    <p class="pos"> P.I.O. </p>
+                </div>
+            </div>
+            <div class="column"> 
+                <div class="card">
+                    <img src="jian.jpeg" class="pfp">
+                    <p class="name"> Jurist Anne De Leon </p>
+                    <p class="pos"> STUDENT </p>
+                </div>
+            </div>
+            <div class="column"> 
+                <div class="card">
+                    <img src="jeira.jpeg" class="pfp">
+                    <p class="name"> Jeira Ayessa Dela Cruz </p>
+                    <p class="pos"> STUDENT </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column"> 
+                <div class="card">
+                    <img src="cam.jpeg" class="pfp">
+                    <p class="name"> Miel Cez Gatchalian </p>
+                    <p class="pos"> STUDENT </p>
+                </div>
+            </div>
+            <div class="column"> 
+                <div class="card">
+                    <img src="djann.jpeg" class="pfp">
+                    <p id="namess"> Djann Maree Angelou Licup </p>
+                    <p class="pos"> STUDENT </p>
+                </div>
+            </div>
+            <div class="column"> 
+                <div class="card">
+                    <img src="shy.png" class="pfp">
+                    <p class="name"> Christa Shyra Liwag </p>
+                    <p class="pos"> STUDENT </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column"> 
+                <div class="card">
+                    <img src="jez.jpeg" class="pfp">
+                    <p class="name"> Jezelene Lopez </p>
+                    <p class="pos"> STUDENT </p>
+                </div>
+            </div>
+            <div class="column"> 
+                <div class="card">
+                    <img src="riz.jpeg" class="pfp">
+                    <p class="names"> Mary Rizaeen Manlusoc </p>
+                    <p class="pos"> STUDENT </p>
+                </div>
+            </div>
+            <div class="column"> 
+                <div class="card">
+                    <img src="lei.jpeg" class="pfp">
+                    <p class="name"> Leidy Chloe Nicolas </p>
+                    <p class="pos"> STUDENT </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column"> 
+                <div class="card">
+                    <img src="klaude.jpeg" class="pfp">
+                    <p class="names"> Klaude Monet Sangoyo </p>
+                    <p class="pos"> SECRETARY </p>
+                </div>
+            </div>
+            <div class="column"> 
+                <div class="card">
+                    <img src="mav.jpeg" class="pfp">
+                    <p class="name"> Mavis Yuanne Victoria </p>
+                    <p class="pos"> PRESIDENT </p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <footer>
+            <a href="https://www.facebook.com/josh.delrosario.37" class="fa-brands fa-facebook">  </a> 
+            <a href="https://www.facebook.com/josh.delrosario.37" class="fa-brands fa-facebook"> </a>
+            <a href="https://twitter.com/scihissg" class="fa-brands fa-twitter"> </a>
+            <a href="https://twitter.com/TheEnvirex" class="fa-brands fa-twitter"> </a>
+        </footer>
+    </body>
+    </html>

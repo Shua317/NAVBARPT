@@ -1,0 +1,334 @@
+ASMEPPS
+<html lang="en">
+    <head>
+        <title> Asmepps </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale-1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+
+      @font-face {
+      font-family: Montserrat;
+      src: url(https://fonts.google.com/share?query=montserrat);
+      }
+
+      @font-face {
+      font-family: Comfortaa;
+      src: url(https://fonts.google.com/share?query=comfortaa);
+      }
+
+
+    nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0px;
+                width: 100vw;
+                left: 0;
+                position: fixed;
+                background-color: rgb(0, 60, 255);
+                color: white;
+                font-family: Montserrat;
+                font-weight: bold;
+                height: 10.5vh;
+                margin: 0px;
+                z-index: 30;
+                top: 0;
+            }
+
+        .mainLis {
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px 10px;
+            color: black;
+            }
+
+        li{
+            list-style-type: none;
+        }
+
+
+            #sub1 {
+                opacity: 0;
+                position: absolute;
+                top: 15px;
+                visibility: hidden;
+                z-index: 3;
+                text-align: center;
+            }
+
+                #subLi {
+                    float: none;
+                    text-align: center;
+                    position: relative;
+                    opacity: 1;
+                    padding: 0;
+                }
+
+            .ContainerLi:hover #sub1 {
+                opacity: 1;
+                display: block;
+                padding: 0;
+                visibility: visible;
+                transition: 0.4s top, 0.6s opacity;
+                top: 40px;
+                position: absolute;
+            }
+
+
+        
+            a {
+                text-decoration: none;
+                color: rgb(55, 70, 206);
+                text-align: left;
+                display: inline-block;
+                transition: 1s;
+            }
+
+
+            li a {
+                z-index: 3;
+                display: block;
+                color: rgb(252, 252, 252);
+                text-align: left; /*padding: 14px 16px;*/
+                padding: 5px;
+                background-color: rgb(21, 169, 228);
+                overflow: hidden;
+                }
+
+            a:hover {
+                background-color: rgb(209, 219, 209);
+                font-size: 30px;
+            }
+
+            .Diamond {
+                background-image: url(Diamond.jpg);
+                text-align: center;
+                font-size: 25px;
+                height: 35vh;
+            }
+
+            p {
+                color: white;
+                font-size: 15px;
+            }
+
+    
+            h2 {
+                color: aliceblue;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                letter-spacing: 1px;
+            }
+
+            .title {
+                width: 340px;
+                height: 50px;
+                background-color: blue;
+                margin: auto;
+            }  
+                    
+            body {
+            overflow-x: hidden;
+            }
+    
+
+        .desc {
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        font-weight: bold;
+        font-family: Comfortaa;
+        background-color: rgb(66, 107, 219);
+        padding: 7px;
+        }
+
+        .deschead {
+        font-family: Montserrat;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        font-size: 40px;
+        background-color: rgb(17, 17, 106);
+        }
+
+        h1 {
+        font-family: Montserrat;
+        font-weight:700;
+        color: aliceblue;
+        }
+
+        h2 {
+        color: aliceblue;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+        letter-spacing: 1px;
+        }
+
+        img {
+        width: 400px;
+        }
+
+        .row {
+        display: flex;
+        }
+        
+        .column {
+        flex: 50%;
+        }
+
+        .hbd {
+        background-color: rgb(43, 132, 205);
+        color: aliceblue;
+        margin: auto;
+        width: 350px;
+        }
+
+        .logo {
+        width: 45px;  
+        }
+
+        footer {
+        z-index: auto; text-align: center; padding: 8px; background-color: blue;
+        }
+        
+        </style>
+        </head>
+    <body>
+        <br>
+        <br>
+        <div class="Diamond">
+        <br>
+        <div class="title">
+    <h2> Diamond '23-'24</h2>
+        </div>
+        <div class="title">
+    <p>Honorato C. Perez Sr., Memorial Science High School (HCPSMSHS) Grade 8-Diamond s.y. 2023-2024</p>
+        </div>
+    <br>
+    <br>
+    <nav>
+        <ul class="mainUL">
+            <li class="mainLis"> <img src="Logo.png" class="logo"> </li>
+            <li class="mainLis"> <a href="About.html"> About </a></li>
+            <li class="ContainerLi mainLis">
+                <a href="ASMEPPS.html"> Achievements </a>
+                <ul id="sub1">
+                    <li class="subLi"><a href="ASMEPPS.html"> ASMEPPS  </a> </li>
+                    <li class="subLi"><a href="Envirex.html"> Envirex </a> </li>
+                    <li class="subLi"><a href="Intramurals.html"> Intramurals </a> </li>
+                    <li class="subLi"><a href="1st-Implementer.html"> 1st Implementer </a> </li>
+                </ul>
+                <li class="ContainerLi mainLis">
+                <a href="Birthdays.html"> Events </a>
+                <ul id="sub1">
+                    <li class="subLi"><a href="Birthdays.html"> Birthdays  </a> </li>
+                    <li class="subLi"><a href="Activities.html"> Activities </a> </li>
+                    <li class="subLi"><a href="Recognitions.html"> Recognitions </a> </li>
+                </ul>
+                <li class="ContainerLi mainLis">
+                    <a href="Students.html"> People </a>
+                    <ul id="sub1">
+                        <li class="subLi"><a href="Students.html"> Students  </a> </li>
+                        <li class="subLi"><a href="Teachers.html"> Teachers </a> </li>
+                    </ul>
+        </ul>
+    </nav>
+        <div class="hbd">
+        <h1>ASMEPPS WINNERS</h1>
+        </div>
+        <div class="row">
+            <div class="column">
+        <img src="josh.jpeg">
+            </div>
+            <div class="column">
+        <p class="deschead">Enoch Josh G. Del Rosario</p> <p class="desc">Math Quiz Bee (10th)</p>
+    </div>
+    </div>
+    <br>
+        <div class="row">
+        <div class="column">
+    <img src="Ben.jpeg">
+        </div>
+        <div class="column">
+        <p class="deschead">Benedict P. Domingo</p>
+        <p class="desc">Math Quiz Bee (4th)</p>
+    </div>
+    </div>
+    <br>
+        <div class="row">
+        <div class="column">
+    <img src="Riz.jpeg">
+        </div>
+        <div class="column">
+        <p class="deschead">Mary Rizaleen M. Manlusoc</p> <p class="desc">Math Quiz Bee (9th)</p>
+    </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+    <img src="Nathan.jpeg">
+        </div>
+        <div class="column">
+        <p class="deschead">Nathaniel James J. Parungao</p> <p class="desc">Math Quiz Bee (8th)</p>
+    </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+    <img src="rus.jpeg">
+        </div>
+        <div class="column">
+        <p class="deschead">Russel Syrius T. Ramos</p> <p class="desc">Math Quiz Bee (National Qualifier)</p>
+    </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+    <img src="Sean.jpeg">
+        </div>
+        <div class="column">
+        <p class="deschead">Sean Maurice C. Sanopo</p> <p class="desc">Math Quiz Bee (National Qualifier)</p>
+    </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+    <img src="Jian.jpeg">
+        </div>
+        <div class="column">
+        <p class="deschead">Jurist Anne C. De Leon</p> <p class="desc">Science Quiz Bee (6th)</p>
+    </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+    <img src="Renz.jpeg">
+        </div>
+        <div class="column">
+        <p class="deschead">Renz Benedict G. Quiroz</p> <p class="desc">Science Quiz Bee (National Qualifier)</p>
+    </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+    <img src="Riz.jpeg">
+        </div>
+        <div class="column">
+        <p class="deschead">Mary Rizaleen M. Manlusoc</p> <p class="desc">Math Trivia (2nd)</p>
+    </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+    <img src="Jez.jpeg">
+        </div>
+        <div class="column">
+        <p class="deschead">Jezelene G. Lopez</p> <p class="desc">Science Trivia (National Qualifier)</p>
+    </div>
+    </div>
+    <br>
+        <footer>
+            <a href="https://www.facebook.com/josh.delrosario.37" class="fa-brands fa-facebook">  </a> 
+            <a href="https://www.facebook.com/josh.delrosario.37" class="fa-brands fa-facebook"> </a>
+            <a href="https://twitter.com/scihissg" class="fa-brands fa-twitter"> </a>
+            <a href="https://twitter.com/TheEnvirex" class="fa-brands fa-twitter"> </a>
+        </footer>
+    </body>
+    </html>
